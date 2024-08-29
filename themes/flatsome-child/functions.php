@@ -483,16 +483,10 @@ function mzrd_calculate_price() {
         return;
     }
 
-    $product_id = absint($_POST['product_id']);error_log('$product_id: ');error_log($product_id);
+    $product_id = absint($_POST['product_id']);
     $precious_metal = isset($_POST['precious_metal']) ? sanitize_text_field($_POST['precious_metal']) : '';
     $carat_weight = isset($_POST['carat_weight']) ? (float)$_POST['carat_weight'] : 0.0;
     $ring_size = isset($_POST['ring_size']) ? (float)$_POST['ring_size'] : 0.0;
-
-    // Логування отриманих значень
-    error_log('Product ID: ' . $product_id);
-    error_log('Precious Metal: ' . $precious_metal);
-    error_log('Carat Weight: ' . $carat_weight);
-    error_log('Ring Size: ' . $ring_size);
 
     // Obtaining product categories
     $product_categories = get_the_terms($product_id, 'product_cat');
@@ -502,18 +496,15 @@ function mzrd_calculate_price() {
     }
 
     // Assume that the product has only one category
-    $category_name = $product_categories[0]->name; // Назва категорії
-    error_log('$category_name: ');
+    $category_name = $product_categories[0]->name;
 
-    // Отримання всіх ACF груп полів
+    // Get all ACF field groups
     $acf_groups = acf_get_field_groups();
     $acf_group = null;
-    error_log('$acf_groups: ');error_log(print_r($acf_groups,1));
 
-    // Знаходимо групу полів, назва якої збігається з назвою категорії товару
+    // Find a group of fields whose name coincides with the name of the product category
     foreach ($acf_groups as $group) {
-//        if ($group['title'] === $category_name) {
-        if (strtolower($group['title']) === strtolower($category_name) || strtolower($group['title']) === strtolower($category_name)) {
+        if (strtolower($group['title']) === strtolower($category_name)) {
             $acf_group = $group;
             break;
         }
@@ -523,10 +514,6 @@ function mzrd_calculate_price() {
         wp_send_json_error(['error' => 'ACF group not found for the product category.']);
         return;
     }
-
-    // Отримуємо значення полів з відповідної групи ACF
-    $all_fields = get_fields($product_id);
-    error_log('$all_fields: ' . print_r($all_fields, true));
 
     $base_price = get_field('base_price', $product_id);error_log('base_price: '.$base_price);
     if (!$base_price) {

@@ -7119,3 +7119,1633 @@
 [29-Aug-2024 13:29:52 UTC] PHP Deprecated:  Hook woocommerce_rest_api_option_permissions is <strong>deprecated</strong> since version 6.3.0 with no alternative available. in /var/www/public_html/mizrahidiams.local/wp-includes/functions.php on line 6085
 [29-Aug-2024 13:29:52 UTC] PHP Deprecated:  Hook woocommerce_rest_api_option_permissions is <strong>deprecated</strong> since version 6.3.0 with no alternative available. in /var/www/public_html/mizrahidiams.local/wp-includes/functions.php on line 6085
 [29-Aug-2024 13:29:52 UTC] PHP Deprecated:  Hook woocommerce_rest_api_option_permissions is <strong>deprecated</strong> since version 6.3.0 with no alternative available. in /var/www/public_html/mizrahidiams.local/wp-includes/functions.php on line 6085
+[29-Aug-2024 19:20:08 UTC] Automatic updates starting...
+[29-Aug-2024 19:20:09 UTC]   Automatic plugin updates starting...
+[29-Aug-2024 19:20:09 UTC]   Automatic plugin updates complete.
+[29-Aug-2024 19:20:10 UTC]   Automatic theme updates starting...
+[29-Aug-2024 19:20:10 UTC]   Automatic theme updates complete.
+[29-Aug-2024 19:20:10 UTC] Automatic updates complete.
+[29-Aug-2024 19:45:02 UTC] $product_id: 
+[29-Aug-2024 19:45:02 UTC] 152
+[29-Aug-2024 19:45:02 UTC] Product ID: 152
+[29-Aug-2024 19:45:02 UTC] Precious Metal: 
+[29-Aug-2024 19:45:02 UTC] Carat Weight: 0
+[29-Aug-2024 19:45:02 UTC] Ring Size: 0
+[29-Aug-2024 19:45:02 UTC] $category_name: 
+[29-Aug-2024 19:45:02 UTC] $acf_groups: 
+[29-Aug-2024 19:45:02 UTC] Array
+(
+    [0] => Array
+        (
+            [ID] => 171
+            [key] => group_66c3a3cdca631
+            [title] => Diamond shapes
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => taxonomy
+                                    [operator] => ==
+                                    [value] => pa_diamond-shape
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [1] => Array
+        (
+            [ID] => 315
+            [key] => group_66cdfdcfa8ae9
+            [title] => Earrings
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => post_type
+                                    [operator] => ==
+                                    [value] => product
+                                )
+
+                            [1] => Array
+                                (
+                                    [param] => post_taxonomy
+                                    [operator] => ==
+                                    [value] => product_cat:earrings
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [2] => Array
+        (
+            [ID] => 180
+            [key] => group_66c5eeb8abb10
+            [title] => Engagement Rings
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => post_type
+                                    [operator] => ==
+                                    [value] => product
+                                )
+
+                            [1] => Array
+                                (
+                                    [param] => post_taxonomy
+                                    [operator] => ==
+                                    [value] => product_cat:engagements-rings
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [3] => Array
+        (
+            [ID] => 174
+            [key] => group_66c3dcf70286b
+            [title] => Precious Metal
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => taxonomy
+                                    [operator] => ==
+                                    [value] => pa_precious-metal
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+)
+
+[29-Aug-2024 19:45:02 UTC] $all_fields: Array
+(
+    [platinum_increase] => 0
+    [carat_min] => 2
+    [carat_max] => 20
+    [price_per_carat] => 20
+    [base_price] => 1200
+)
+
+[29-Aug-2024 19:45:02 UTC] base_price: 1200
+[29-Aug-2024 19:45:06 UTC] $product_id: 
+[29-Aug-2024 19:45:06 UTC] 152
+[29-Aug-2024 19:45:06 UTC] Product ID: 152
+[29-Aug-2024 19:45:06 UTC] Precious Metal: 18k-rose-gold
+[29-Aug-2024 19:45:06 UTC] Carat Weight: 0
+[29-Aug-2024 19:45:06 UTC] Ring Size: 0
+[29-Aug-2024 19:45:06 UTC] $category_name: 
+[29-Aug-2024 19:45:06 UTC] $acf_groups: 
+[29-Aug-2024 19:45:06 UTC] Array
+(
+    [0] => Array
+        (
+            [ID] => 171
+            [key] => group_66c3a3cdca631
+            [title] => Diamond shapes
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => taxonomy
+                                    [operator] => ==
+                                    [value] => pa_diamond-shape
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [1] => Array
+        (
+            [ID] => 315
+            [key] => group_66cdfdcfa8ae9
+            [title] => Earrings
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => post_type
+                                    [operator] => ==
+                                    [value] => product
+                                )
+
+                            [1] => Array
+                                (
+                                    [param] => post_taxonomy
+                                    [operator] => ==
+                                    [value] => product_cat:earrings
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [2] => Array
+        (
+            [ID] => 180
+            [key] => group_66c5eeb8abb10
+            [title] => Engagement Rings
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => post_type
+                                    [operator] => ==
+                                    [value] => product
+                                )
+
+                            [1] => Array
+                                (
+                                    [param] => post_taxonomy
+                                    [operator] => ==
+                                    [value] => product_cat:engagements-rings
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [3] => Array
+        (
+            [ID] => 174
+            [key] => group_66c3dcf70286b
+            [title] => Precious Metal
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => taxonomy
+                                    [operator] => ==
+                                    [value] => pa_precious-metal
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+)
+
+[29-Aug-2024 19:45:06 UTC] $all_fields: Array
+(
+    [platinum_increase] => 0
+    [carat_min] => 2
+    [carat_max] => 20
+    [price_per_carat] => 20
+    [base_price] => 1200
+)
+
+[29-Aug-2024 19:45:06 UTC] base_price: 1200
+[29-Aug-2024 19:45:10 UTC] $product_id: 
+[29-Aug-2024 19:45:10 UTC] 152
+[29-Aug-2024 19:45:10 UTC] Product ID: 152
+[29-Aug-2024 19:45:10 UTC] Precious Metal: 18k-rose-gold
+[29-Aug-2024 19:45:10 UTC] Carat Weight: 8
+[29-Aug-2024 19:45:10 UTC] Ring Size: 0
+[29-Aug-2024 19:45:10 UTC] $category_name: 
+[29-Aug-2024 19:45:10 UTC] $acf_groups: 
+[29-Aug-2024 19:45:10 UTC] Array
+(
+    [0] => Array
+        (
+            [ID] => 171
+            [key] => group_66c3a3cdca631
+            [title] => Diamond shapes
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => taxonomy
+                                    [operator] => ==
+                                    [value] => pa_diamond-shape
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [1] => Array
+        (
+            [ID] => 315
+            [key] => group_66cdfdcfa8ae9
+            [title] => Earrings
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => post_type
+                                    [operator] => ==
+                                    [value] => product
+                                )
+
+                            [1] => Array
+                                (
+                                    [param] => post_taxonomy
+                                    [operator] => ==
+                                    [value] => product_cat:earrings
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [2] => Array
+        (
+            [ID] => 180
+            [key] => group_66c5eeb8abb10
+            [title] => Engagement Rings
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => post_type
+                                    [operator] => ==
+                                    [value] => product
+                                )
+
+                            [1] => Array
+                                (
+                                    [param] => post_taxonomy
+                                    [operator] => ==
+                                    [value] => product_cat:engagements-rings
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [3] => Array
+        (
+            [ID] => 174
+            [key] => group_66c3dcf70286b
+            [title] => Precious Metal
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => taxonomy
+                                    [operator] => ==
+                                    [value] => pa_precious-metal
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+)
+
+[29-Aug-2024 19:45:10 UTC] $all_fields: Array
+(
+    [platinum_increase] => 0
+    [carat_min] => 2
+    [carat_max] => 20
+    [price_per_carat] => 20
+    [base_price] => 1200
+)
+
+[29-Aug-2024 19:45:10 UTC] base_price: 1200
+[29-Aug-2024 19:45:16 UTC] $product_id: 
+[29-Aug-2024 19:45:16 UTC] 152
+[29-Aug-2024 19:45:16 UTC] Product ID: 152
+[29-Aug-2024 19:45:16 UTC] Precious Metal: 18k-rose-gold
+[29-Aug-2024 19:45:16 UTC] Carat Weight: 0
+[29-Aug-2024 19:45:16 UTC] Ring Size: 0
+[29-Aug-2024 19:45:16 UTC] $category_name: 
+[29-Aug-2024 19:45:16 UTC] $acf_groups: 
+[29-Aug-2024 19:45:16 UTC] Array
+(
+    [0] => Array
+        (
+            [ID] => 171
+            [key] => group_66c3a3cdca631
+            [title] => Diamond shapes
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => taxonomy
+                                    [operator] => ==
+                                    [value] => pa_diamond-shape
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [1] => Array
+        (
+            [ID] => 315
+            [key] => group_66cdfdcfa8ae9
+            [title] => Earrings
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => post_type
+                                    [operator] => ==
+                                    [value] => product
+                                )
+
+                            [1] => Array
+                                (
+                                    [param] => post_taxonomy
+                                    [operator] => ==
+                                    [value] => product_cat:earrings
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [2] => Array
+        (
+            [ID] => 180
+            [key] => group_66c5eeb8abb10
+            [title] => Engagement Rings
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => post_type
+                                    [operator] => ==
+                                    [value] => product
+                                )
+
+                            [1] => Array
+                                (
+                                    [param] => post_taxonomy
+                                    [operator] => ==
+                                    [value] => product_cat:engagements-rings
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [3] => Array
+        (
+            [ID] => 174
+            [key] => group_66c3dcf70286b
+            [title] => Precious Metal
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => taxonomy
+                                    [operator] => ==
+                                    [value] => pa_precious-metal
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+)
+
+[29-Aug-2024 19:45:16 UTC] $all_fields: Array
+(
+    [platinum_increase] => 0
+    [carat_min] => 2
+    [carat_max] => 20
+    [price_per_carat] => 20
+    [base_price] => 1200
+)
+
+[29-Aug-2024 19:45:16 UTC] base_price: 1200
+[29-Aug-2024 19:45:22 UTC] $product_id: 
+[29-Aug-2024 19:45:22 UTC] 152
+[29-Aug-2024 19:45:22 UTC] Product ID: 152
+[29-Aug-2024 19:45:22 UTC] Precious Metal: 18k-rose-gold
+[29-Aug-2024 19:45:22 UTC] Carat Weight: 8
+[29-Aug-2024 19:45:22 UTC] Ring Size: 0
+[29-Aug-2024 19:45:22 UTC] $category_name: 
+[29-Aug-2024 19:45:22 UTC] $acf_groups: 
+[29-Aug-2024 19:45:22 UTC] Array
+(
+    [0] => Array
+        (
+            [ID] => 171
+            [key] => group_66c3a3cdca631
+            [title] => Diamond shapes
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => taxonomy
+                                    [operator] => ==
+                                    [value] => pa_diamond-shape
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [1] => Array
+        (
+            [ID] => 315
+            [key] => group_66cdfdcfa8ae9
+            [title] => Earrings
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => post_type
+                                    [operator] => ==
+                                    [value] => product
+                                )
+
+                            [1] => Array
+                                (
+                                    [param] => post_taxonomy
+                                    [operator] => ==
+                                    [value] => product_cat:earrings
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [2] => Array
+        (
+            [ID] => 180
+            [key] => group_66c5eeb8abb10
+            [title] => Engagement Rings
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => post_type
+                                    [operator] => ==
+                                    [value] => product
+                                )
+
+                            [1] => Array
+                                (
+                                    [param] => post_taxonomy
+                                    [operator] => ==
+                                    [value] => product_cat:engagements-rings
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [3] => Array
+        (
+            [ID] => 174
+            [key] => group_66c3dcf70286b
+            [title] => Precious Metal
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => taxonomy
+                                    [operator] => ==
+                                    [value] => pa_precious-metal
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+)
+
+[29-Aug-2024 19:45:22 UTC] $all_fields: Array
+(
+    [platinum_increase] => 0
+    [carat_min] => 2
+    [carat_max] => 20
+    [price_per_carat] => 20
+    [base_price] => 1200
+)
+
+[29-Aug-2024 19:45:22 UTC] base_price: 1200
+[29-Aug-2024 19:57:56 UTC] $product_id: 
+[29-Aug-2024 19:57:56 UTC] 94
+[29-Aug-2024 19:57:56 UTC] Product ID: 94
+[29-Aug-2024 19:57:56 UTC] Precious Metal: 
+[29-Aug-2024 19:57:56 UTC] Carat Weight: 0
+[29-Aug-2024 19:57:56 UTC] Ring Size: 0
+[29-Aug-2024 19:57:56 UTC] $category_name: 
+[29-Aug-2024 19:57:56 UTC] $acf_groups: 
+[29-Aug-2024 19:57:56 UTC] Array
+(
+    [0] => Array
+        (
+            [ID] => 171
+            [key] => group_66c3a3cdca631
+            [title] => Diamond shapes
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => taxonomy
+                                    [operator] => ==
+                                    [value] => pa_diamond-shape
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [1] => Array
+        (
+            [ID] => 315
+            [key] => group_66cdfdcfa8ae9
+            [title] => Earrings
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => post_type
+                                    [operator] => ==
+                                    [value] => product
+                                )
+
+                            [1] => Array
+                                (
+                                    [param] => post_taxonomy
+                                    [operator] => ==
+                                    [value] => product_cat:earrings
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [2] => Array
+        (
+            [ID] => 180
+            [key] => group_66c5eeb8abb10
+            [title] => Engagement Rings
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => post_type
+                                    [operator] => ==
+                                    [value] => product
+                                )
+
+                            [1] => Array
+                                (
+                                    [param] => post_taxonomy
+                                    [operator] => ==
+                                    [value] => product_cat:engagements-rings
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [3] => Array
+        (
+            [ID] => 174
+            [key] => group_66c3dcf70286b
+            [title] => Precious Metal
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => taxonomy
+                                    [operator] => ==
+                                    [value] => pa_precious-metal
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+)
+
+[29-Aug-2024 19:57:56 UTC] $all_fields: Array
+(
+    [platinum_increase] => 20
+    [carat_min] => 2
+    [carat_max] => 10
+    [price_per_carat] => 1300
+    [ring_size_increase] => 10
+    [base_price] => 2500
+)
+
+[29-Aug-2024 19:57:56 UTC] base_price: 2500
+[29-Aug-2024 19:57:59 UTC] $product_id: 
+[29-Aug-2024 19:57:59 UTC] 94
+[29-Aug-2024 19:57:59 UTC] Product ID: 94
+[29-Aug-2024 19:57:59 UTC] Precious Metal: platinum
+[29-Aug-2024 19:57:59 UTC] Carat Weight: 0
+[29-Aug-2024 19:57:59 UTC] Ring Size: 0
+[29-Aug-2024 19:57:59 UTC] $category_name: 
+[29-Aug-2024 19:57:59 UTC] $acf_groups: 
+[29-Aug-2024 19:57:59 UTC] Array
+(
+    [0] => Array
+        (
+            [ID] => 171
+            [key] => group_66c3a3cdca631
+            [title] => Diamond shapes
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => taxonomy
+                                    [operator] => ==
+                                    [value] => pa_diamond-shape
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [1] => Array
+        (
+            [ID] => 315
+            [key] => group_66cdfdcfa8ae9
+            [title] => Earrings
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => post_type
+                                    [operator] => ==
+                                    [value] => product
+                                )
+
+                            [1] => Array
+                                (
+                                    [param] => post_taxonomy
+                                    [operator] => ==
+                                    [value] => product_cat:earrings
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [2] => Array
+        (
+            [ID] => 180
+            [key] => group_66c5eeb8abb10
+            [title] => Engagement Rings
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => post_type
+                                    [operator] => ==
+                                    [value] => product
+                                )
+
+                            [1] => Array
+                                (
+                                    [param] => post_taxonomy
+                                    [operator] => ==
+                                    [value] => product_cat:engagements-rings
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [3] => Array
+        (
+            [ID] => 174
+            [key] => group_66c3dcf70286b
+            [title] => Precious Metal
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => taxonomy
+                                    [operator] => ==
+                                    [value] => pa_precious-metal
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+)
+
+[29-Aug-2024 19:57:59 UTC] $all_fields: Array
+(
+    [platinum_increase] => 20
+    [carat_min] => 2
+    [carat_max] => 10
+    [price_per_carat] => 1300
+    [ring_size_increase] => 10
+    [base_price] => 2500
+)
+
+[29-Aug-2024 19:57:59 UTC] base_price: 2500
+[29-Aug-2024 19:58:03 UTC] $product_id: 
+[29-Aug-2024 19:58:03 UTC] 94
+[29-Aug-2024 19:58:03 UTC] Product ID: 94
+[29-Aug-2024 19:58:03 UTC] Precious Metal: platinum
+[29-Aug-2024 19:58:03 UTC] Carat Weight: 10
+[29-Aug-2024 19:58:03 UTC] Ring Size: 0
+[29-Aug-2024 19:58:03 UTC] $category_name: 
+[29-Aug-2024 19:58:03 UTC] $acf_groups: 
+[29-Aug-2024 19:58:03 UTC] Array
+(
+    [0] => Array
+        (
+            [ID] => 171
+            [key] => group_66c3a3cdca631
+            [title] => Diamond shapes
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => taxonomy
+                                    [operator] => ==
+                                    [value] => pa_diamond-shape
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [1] => Array
+        (
+            [ID] => 315
+            [key] => group_66cdfdcfa8ae9
+            [title] => Earrings
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => post_type
+                                    [operator] => ==
+                                    [value] => product
+                                )
+
+                            [1] => Array
+                                (
+                                    [param] => post_taxonomy
+                                    [operator] => ==
+                                    [value] => product_cat:earrings
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [2] => Array
+        (
+            [ID] => 180
+            [key] => group_66c5eeb8abb10
+            [title] => Engagement Rings
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => post_type
+                                    [operator] => ==
+                                    [value] => product
+                                )
+
+                            [1] => Array
+                                (
+                                    [param] => post_taxonomy
+                                    [operator] => ==
+                                    [value] => product_cat:engagements-rings
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [3] => Array
+        (
+            [ID] => 174
+            [key] => group_66c3dcf70286b
+            [title] => Precious Metal
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => taxonomy
+                                    [operator] => ==
+                                    [value] => pa_precious-metal
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+)
+
+[29-Aug-2024 19:58:03 UTC] $all_fields: Array
+(
+    [platinum_increase] => 20
+    [carat_min] => 2
+    [carat_max] => 10
+    [price_per_carat] => 1300
+    [ring_size_increase] => 10
+    [base_price] => 2500
+)
+
+[29-Aug-2024 19:58:03 UTC] base_price: 2500
+[29-Aug-2024 19:58:09 UTC] $product_id: 
+[29-Aug-2024 19:58:09 UTC] 94
+[29-Aug-2024 19:58:09 UTC] Product ID: 94
+[29-Aug-2024 19:58:09 UTC] Precious Metal: platinum
+[29-Aug-2024 19:58:09 UTC] Carat Weight: 10
+[29-Aug-2024 19:58:09 UTC] Ring Size: 8
+[29-Aug-2024 19:58:09 UTC] $category_name: 
+[29-Aug-2024 19:58:09 UTC] $acf_groups: 
+[29-Aug-2024 19:58:09 UTC] Array
+(
+    [0] => Array
+        (
+            [ID] => 171
+            [key] => group_66c3a3cdca631
+            [title] => Diamond shapes
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => taxonomy
+                                    [operator] => ==
+                                    [value] => pa_diamond-shape
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [1] => Array
+        (
+            [ID] => 315
+            [key] => group_66cdfdcfa8ae9
+            [title] => Earrings
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => post_type
+                                    [operator] => ==
+                                    [value] => product
+                                )
+
+                            [1] => Array
+                                (
+                                    [param] => post_taxonomy
+                                    [operator] => ==
+                                    [value] => product_cat:earrings
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [2] => Array
+        (
+            [ID] => 180
+            [key] => group_66c5eeb8abb10
+            [title] => Engagement Rings
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => post_type
+                                    [operator] => ==
+                                    [value] => product
+                                )
+
+                            [1] => Array
+                                (
+                                    [param] => post_taxonomy
+                                    [operator] => ==
+                                    [value] => product_cat:engagements-rings
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+    [3] => Array
+        (
+            [ID] => 174
+            [key] => group_66c3dcf70286b
+            [title] => Precious Metal
+            [fields] => Array
+                (
+                )
+
+            [location] => Array
+                (
+                    [0] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [param] => taxonomy
+                                    [operator] => ==
+                                    [value] => pa_precious-metal
+                                )
+
+                        )
+
+                )
+
+            [menu_order] => 0
+            [position] => normal
+            [style] => default
+            [label_placement] => top
+            [instruction_placement] => label
+            [hide_on_screen] => 
+            [active] => 1
+            [description] => 
+            [show_in_rest] => 0
+            [_valid] => 1
+        )
+
+)
+
+[29-Aug-2024 19:58:09 UTC] $all_fields: Array
+(
+    [platinum_increase] => 20
+    [carat_min] => 2
+    [carat_max] => 10
+    [price_per_carat] => 1300
+    [ring_size_increase] => 10
+    [base_price] => 2500
+)
+
+[29-Aug-2024 19:58:09 UTC] base_price: 2500
