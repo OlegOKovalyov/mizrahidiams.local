@@ -1,0 +1,290 @@
+/*
+Theme Name: Flatsom Child Theme
+Template: flatsome
+Text Domain: flatsome-child
+*/
+
+/* Top Bar Menu */
+/*.top-bar-nav .phone__icon .icon {
+	margin-right: 10px;
+}
+.top-bar-nav .phone__icon .text {
+	color:  #fafafa;
+	font-size: 20px;
+	font-weight: 400;
+	vertical-align: super;
+}
+.top-bar-nav .menu-item .nav-top-link {
+	font-size: 20px;
+}
+.top-bar-nav .menu-item#menu-item-84 a.nav-top-link {
+	color: #1f1d1d;
+	background-color:  #fafafa;
+    border: 1px solid #1f1d1d;
+    border-radius: 0;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.top-bar-nav .menu-item#menu-item-84 a.nav-top-link:hover {
+	color: #fafafa;
+	background-color: #1f1d1d;
+    border: 1px solid #fafafa;
+    border-radius: 0;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}*/
+/* Top Footer */
+/*.footer-wrapper .footer-1 .row {
+	display: grid;
+	grid-template-columns: 35% 21% 25% 21%;
+	max-width: none;
+}
+.footer-wrapper .footer-1 .row .col {
+	max-width: none;
+}
+.footer-1 .brxe-block .brxe-text-link {
+	display: block;
+	margin-bottom: 20px;
+}
+.footer-1 .brxe-logo img {
+	margin-bottom: 140px;
+}
+.footer-1 .brxe-block .icon {
+	margin-right: 10px;
+}
+.footer-1 .brxe-block .text {
+	font-size: 20px;
+	font-weight: 200;
+}
+.footer-1 #brxe-uxrptp {
+	display: flex;
+	width: 80px;
+	justify-content: space-between;
+}
+.footer-1 .col .widget-title {
+	color:  #1f1d1d;
+	font-size: 24px;
+	font-weight: 400;
+}
+.is-divider {
+	height: 0;
+}*/
+
+/* Single Product */
+/*.single-product {
+	color: #1f1d1d;
+}
+.single-product .shop-container {
+	background-color: #f5f5f5;
+	padding-top: 80px;
+}
+.single-product .header-block {
+	display: none;
+}
+.single-product .breadcrumbs {
+	margin-bottom: 20px;
+}
+.single-product .price-wrapper .product-page-price {
+	color: #1f1d1d;
+	font-weight: 300;
+}
+.single-product .product_attributes {
+	!*padding-bottom: 20px;*!
+}
+.single-product .product_attributes p {
+	margin-bottom: 0;
+}
+.single-product .summary .product_attributes p:nth-child(5),
+.single-product .summary .product_attributes p:nth-child(6),
+.single-product .summary .product_attributes p:nth-child(7),
+.single-product .summary .product_attributes p:nth-child(8) {
+	display: none;
+}
+.single-product .summary .variations .label label {
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+.woo-variation-swatches .variable-items-wrapper .variable-item:not(.radio-variable-item) {
+	background-color: #f5f5f5;
+}
+.woo-variation-swatches .variable-items-wrapper .variable-item.button-variable-item-asscher img {
+	width: 37px;
+	height: 30px;
+	margin-left: 5px;
+}
+.woo-variation-swatches .variable-items-wrapper .variable-item.button-variable-item-cushion img {
+	width: 35px;
+	height: 30px;
+	margin-left: 5px;
+}
+.woo-variation-swatches .variable-items-wrapper .variable-item.button-variable-item-emerald img {
+	width: 26px;
+	height: 28px;
+	margin-left: 5px;
+}
+.woo-variation-swatches .variable-items-wrapper .variable-item.button-variable-item-heart img {
+	width: 37px;
+	height: 29px;
+	margin-left: 5px;
+}
+.woo-variation-swatches .variable-items-wrapper .variable-item.button-variable-item-marquise img {
+	width: 23px;
+	height: 31px;
+	margin-left: 5px;
+}
+.woo-variation-swatches .variable-items-wrapper .variable-item.button-variable-item-oval img {
+	width: 33px;
+	height: 30px;
+	margin-left: 5px;
+}
+.woo-variation-swatches .variable-items-wrapper .variable-item.button-variable-item-pear img {
+	width: 24px;
+	height: 31px;
+	margin-left: 5px;
+}
+.woo-variation-swatches .variable-items-wrapper .variable-item.button-variable-item-princess img {
+	width: 37px;
+	height: 28px;
+	margin-left: 5px;
+}
+.woo-variation-swatches .variable-items-wrapper .variable-item.button-variable-item-radiant img {
+	width: 26px;
+	height: 26px;
+	margin-left: 5px;
+}
+.woo-variation-swatches .variable-items-wrapper .variable-item.button-variable-item-round img {
+	width: 37px;
+	height: 29px;
+	margin-left: 5px;
+}*/
+/*.single-product .button-variable-item-asscher::before {
+	content: '';
+	display: inline-block;
+	background-image: url('http://www.mizrahidiams.local/wp-content/uploads/asscher.png');
+	width: 37px;
+	height: 30px;
+	margin-right: -5px;
+	margin-left: 5px;
+}*/
+/*.single-product .button-variable-item-cushion::before {
+	content: '';
+	display: inline-block;
+	background-image: url('http://www.mizrahidiams.local/wp-content/uploads/cushion.png');
+	width: 35px;
+	height: 30px;
+	margin-right: -5px;
+	margin-left: 5px;
+}*/
+/*.single-product .button-variable-item-emerald::before {
+	content: '';
+	display: inline-block;
+	background-image: url('http://www.mizrahidiams.local/wp-content/uploads/emerald.png');
+	width: 26px;
+	height: 28px;
+	margin-right: -5px;
+	margin-left: 5px;
+}*/
+/*.single-product .button-variable-item-heart::before {
+	content: '';
+	display: inline-block;
+	background-image: url('http://www.mizrahidiams.local/wp-content/uploads/heart-1.svg');
+	width: 37px;
+	height: 29px;
+	margin-right: -5px;
+	margin-left: 5px;
+}*/
+/*.single-product .button-variable-item-marquise::before {
+	content: '';
+	display: inline-block;
+	background-image: url('http://www.mizrahidiams.local/wp-content/uploads/marquise.png');
+	width: 23px;
+	height: 31px;
+	margin-right: -5px;
+	margin-left: 5px;
+}*/
+/*.single-product .button-variable-item-oval::before {
+	content: '';
+	display: inline-block;
+	background-image: url('http://www.mizrahidiams.local/wp-content/uploads/oval.png');
+	width: 33px;
+	height: 30px;
+	margin-right: -5px;
+	margin-left: 5px;
+}*/
+/*.single-product .button-variable-item-pear::before {
+	content: '';
+	display: inline-block;
+	background-image: url('http://www.mizrahidiams.local/wp-content/uploads/pear.png');
+	width: 24px;
+	height: 31px;
+	margin-right: -5px;
+	margin-left: 5px;
+}*/
+/*.single-product .button-variable-item-princess::before {
+	content: '';
+	display: inline-block;
+	background-image: url('http://www.mizrahidiams.local/wp-content/uploads/princess.png');
+	width: 37px;
+	height: 28px;
+	margin-right: -5px;
+	margin-left: 5px;
+}*/
+/*.single-product .button-variable-item-radiant::before {
+	content: '';
+	display: inline-block;
+	background-image: url('http://www.mizrahidiams.local/wp-content/uploads/radiant.png');
+	width: 26px;
+	height: 26px;
+	margin-right: -5px;
+	margin-left: 5px;
+}*/
+/*.single-product .button-variable-item-round::before {
+	content: '';
+	display: inline-block;
+	background-image: url('http://www.mizrahidiams.local/wp-content/uploads/round.png');
+	width: 37px;
+	height: 29px;
+	margin-right: -5px;
+	margin-left: 5px;
+}*/
+/*#pa_diamond-shape + ul .variable-item .variable-item-contents,
+#pa_precious-metal + ul .variable-item .variable-item-contents {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+#pa_diamond-shape + ul .variable-item .variable-item-contents {
+	width: 70px;
+}
+#pa_precious-metal + ul .variable-item .variable-item-contents {
+	min-width: 200px;
+}
+#pa_diamond-shape + ul .variable-item .variable-item-contents .variable-item-contents,
+#pa_precious-metal + ul .variable-item .variable-item-contents .variable-item-contents {
+	align-items: center;
+	justify-content: flex-start;
+	flex-direction: row;
+}
+!* Make Carats Weight attribute from button to dropdown *!
+#pa_carats-weight + ul {
+	display: none;
+}
+#pa_carats-weight {
+	display: block !important;
+}
+!* Make Ring Size attribute from button to dropdown *!
+#pa_ring-size + ul {
+	display: none;
+}
+#pa_ring-size {
+	display: block !important;
+}
+.single-product .summary .button.alt {
+	font-weight: 600;
+	background-color: #1f1d1d;
+	padding: 0.5em 1.2em;
+	width: 100%;
+}*/

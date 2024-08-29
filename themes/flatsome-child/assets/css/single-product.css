@@ -1,0 +1,174 @@
+/* Single Product */
+.single-product {
+    color: #1f1d1d;
+}
+.single-product .shop-container {
+    background-color: #f5f5f5;
+    padding-top: 80px;
+}
+.single-product .header-block {
+    display: none;
+}
+.single-product .breadcrumbs {
+    margin-bottom: 20px;
+}
+.single-product .price-wrapper .product-page-price {
+    color: #1f1d1d;
+    font-weight: 300;
+}
+.single-product .product_attributes p {
+    margin-bottom: 0;
+}
+.single-product .summary .product_attributes p:nth-child(5),
+.single-product .summary .product_attributes p:nth-child(6),
+.single-product .summary .product_attributes p:nth-child(7),
+.single-product .summary .product_attributes p:nth-child(8) {
+    display: none;
+}
+.single-product .summary .variations .label label {
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.woo-variation-swatches .variable-items-wrapper .variable-item:not(.radio-variable-item) {
+    background-color: #f5f5f5;
+}
+.woo-variation-swatches .variable-items-wrapper .variable-item.button-variable-item-asscher img {
+    width: 37px;
+    height: 30px;
+    margin-left: 5px;
+}
+.woo-variation-swatches .variable-items-wrapper .variable-item.button-variable-item-cushion img {
+    width: 35px;
+    height: 30px;
+    margin-left: 5px;
+}
+.woo-variation-swatches .variable-items-wrapper .variable-item.button-variable-item-emerald img {
+    width: 26px;
+    height: 28px;
+    margin-left: 5px;
+}
+.woo-variation-swatches .variable-items-wrapper .variable-item.button-variable-item-heart img {
+    width: 37px;
+    height: 29px;
+    margin-left: 5px;
+}
+.woo-variation-swatches .variable-items-wrapper .variable-item.button-variable-item-marquise img {
+    width: 23px;
+    height: 31px;
+    margin-left: 5px;
+}
+.woo-variation-swatches .variable-items-wrapper .variable-item.button-variable-item-oval img {
+    width: 33px;
+    height: 30px;
+    margin-left: 5px;
+}
+.woo-variation-swatches .variable-items-wrapper .variable-item.button-variable-item-pear img {
+    width: 24px;
+    height: 31px;
+    margin-left: 5px;
+}
+.woo-variation-swatches .variable-items-wrapper .variable-item.button-variable-item-princess img {
+    width: 37px;
+    height: 28px;
+    margin-left: 5px;
+}
+.woo-variation-swatches .variable-items-wrapper .variable-item.button-variable-item-radiant img {
+    width: 26px;
+    height: 26px;
+    margin-left: 5px;
+}
+.woo-variation-swatches .variable-items-wrapper .variable-item.button-variable-item-round img {
+    width: 37px;
+    height: 29px;
+    margin-left: 5px;
+}
+#pa_diamond-shape + ul .variable-item .variable-item-contents,
+#pa_precious-metal + ul .variable-item .variable-item-contents {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#pa_diamond-shape + ul .variable-item .variable-item-contents {
+    width: 70px;
+}
+#pa_precious-metal + ul .variable-item .variable-item-contents {
+    min-width: 200px;
+}
+#pa_diamond-shape + ul .variable-item .variable-item-contents .variable-item-contents,
+#pa_precious-metal + ul .variable-item .variable-item-contents .variable-item-contents {
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+/* Make Carats Weight attribute from button to dropdown */
+#pa_carats-weight + ul {
+    display: none;
+}
+#pa_carats-weight {
+    display: block !important;
+}
+/* Make Ring Size attribute from button to dropdown */
+#pa_ring-size + ul {
+    display: none;
+}
+#pa_ring-size {
+    display: block !important;
+}
+.single-product .summary .button.alt {
+    font-weight: 600;
+    background-color: #1f1d1d;
+    padding: 0.5em 1.2em;
+    width: 100%;
+}
+
+/* Summary Price */
+.single-product .variations_form #calculated-price {
+    color: #000;
+    font-family: "Cormorant Garamond";
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Tabs */
+.single-product .product-footer .woocommerce-tabs {
+    border-top: none;
+}
+.single-product .nav-line>li>a:before {
+    top: 45px;
+}
+.product-footer .woocommerce-tabs>.nav-line:not(.nav-vertical) {
+    border-bottom: 1px solid #dddedf;
+    line-height: 1.65rem;
+}
+.product-footer .nav > li {
+    margin: 0 15px;
+}
+.product-footer .nav > li a {
+    color: #1f1d1d;
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.product-footer .nav-line > li > a:before {
+    background-color: #1f1d1d;
+}
+.product-footer .nav>li.active>a {
+    color: #1f1d1d;
+}
+.single-product .tab-panels .panel {
+    font-weight: 300;
+    max-width: 60ch;
+}
+.product__info-text h3 {
+    font-family: Jost, sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+.single-product .nav-dropdown.nav-dropdown-default>li>a {
+    /*padding-left: 0;*/
+    /*padding-right: 0;*/
+    /*margin: 0 10px;*/
+    border-bottom: none;
+}

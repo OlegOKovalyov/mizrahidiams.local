@@ -1,0 +1,28 @@
+2024-08-16T18:38:32+00:00 DEBUG POST: https://ads.tiktok.com/marketing_api/api/developer/app/create_auto_approve/
+
+{"business_platform":"PROD","smb_id":"tt4b_woocommerce_66bf9ca8dd588httpwwwmizrahidiamslocalwp-admin","smb_name":"PROD","redirect_url":"http:\/\/www.mizrahidiams.local\/wp-admin\/"}
+ ajax: no
+2024-08-16T18:38:33+00:00 DEBUG Tt4b_Mapi_Class::create_open_source_app: Response: 
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+X-Tt-Logid: 202408161838329FB870B025B149179E58,202408161838329FB870B025B149179E58
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+x-tt-trace-host: 0177138a3a74d982834d42c342f3cd93f116a7503edcf3b86265fd8cb851e538caf0cc7c025653b3cca4759968d6be2cad6a2b137e1df662fc8e92bd21fac8153e847f61273102e78442e10830bff152bfc25c7489770a5609efe2b3ee39f726376e95fbe20a196614aa8aa9fcf864f72e
+x-tt-trace-id: 00-2408161838329FB870B025B149179E58-17252EED6A50D62C-00
+Server: TLB
+Content-Encoding: gzip
+Content-Length: 210
+X-Origin-Response-Time: 71,23.54.117.197
+X-Akamai-Request-ID: 1409127a.10f04a23
+Date: Fri, 16 Aug 2024 18:38:33 GMT
+X-Cache: TCP_MISS from a96-16-54-167.deploy.akamaitechnologies.com (AkamaiGHost/11.6.1.1-c253c574b3c2af32d59c15ea70b89e46) (-)
+Connection: close
+Vary: Accept-Encoding
+X-Cache-Remote: TCP_MISS from a23-54-117-197.deploy.akamaitechnologies.com (AkamaiGHost/11.6.1.1-c253c574b3c2af32d59c15ea70b89e46) (-)
+x-tt-trace-tag: id=16;cdn-cache=miss;type=dyn
+Server-Timing: cdn-cache; desc=MISS, edge; dur=210, origin; dur=71
+Server-Timing: inner; dur=66
+X-Parent-Response-Time: 278,96.16.54.167
+
+{"code":0,"msg":"ok","data":{"external_data_key":"a0df5345-c3b1-4db8-9789-2b7682f4f74d","app_secret":"78714eb22b1d27a0b26dd8e203e38a4a36a0fa7f","redirect_uri":"http:\/\/www.mizrahidiams.local\/wp-admin\/","app_id":"7403808563526811649"}}

@@ -1,0 +1,99 @@
+/* Shop Page & Categories Page */
+.archive .header-block.block-html-after-header {
+    display: none !important;
+}
+.custom-page-title,
+.category-page-title {
+    padding-top: 70px;
+}
+.custom-page-title #brxe-krisox {
+    /*display: none;*/
+}
+.archive .custom-page-title .wp-block-code .hljs,
+.archive .custom-page-title .wp-block-code {
+    background-color: #fff;
+    border: none;
+}
+.archive .custom-page-title .wp-block-code .hljs a,
+.page-title-inner .breadcrumbs a {
+    font-weight: 300;
+}
+.archive .custom-page-title .wp-block-code .hljs .divider,
+.page-title-inner .breadcrumbs.yoast-breadcrumb .divider {
+    color: #1f1d1d;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.archive .custom-page-title .wp-block-code .hljs a,
+.archive .custom-page-title .wp-block-code .hljs .breadcrumb_last,
+.page-title-inner .breadcrumbs.yoast-breadcrumb a,
+.page-title-inner .breadcrumbs.yoast-breadcrumb .breadcrumb_last {
+    color: #1f1d1d;
+    font-family: Jost;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+/*.archive .custom-page-title h2 {*/
+.archive #mydiv h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-family: "Cormorant Garamond";
+}
+.archive .shop-page-title {
+    text-shadow: none;
+}
+.woocommerce-shop .shop-page-title nav#breadcrumbs {
+    display: none;
+}
+.products .col-inner .box-text.text-center {
+     padding-left: 0;
+     padding-right: 0;
+}
+.box-text-inner {
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.07em;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+/* Categories Title decoration */
+/* Main container */
+#brxe-sgwtpk {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+}
+/* Left and right container */
+.brxe-divider {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+/* A line with a gradient */
+.line {
+    width: 88px;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* Heading style */
+.brxe-heading {
+    margin: 0 20px; /* Adds a space to the left and right of the title */
+}
+/* Left line: gradient from right to left */
+.heading__line--left .line {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+}
+/* Right line: gradient from left to right */
+.heading__line--right .line {
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+}
+
+/* Categories Page */
+.archive

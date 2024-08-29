@@ -1,0 +1,45 @@
+/* Top Bar Menu in Header */
+.header .logo-left #logo {
+    display: none;
+}
+.header .nav {
+    justify-content: center;
+}
+.header #top-bar .flex-row {
+    border-bottom: 1px solid gray;
+    padding: 0 0 15px 0;
+}
+.top-bar-nav .phone__icon .icon {
+    margin-right: 10px;
+}
+.top-bar-nav .phone__icon .text {
+    color:  #fafafa;
+    font-size: 20px;
+    font-weight: 400;
+    vertical-align: super;
+}
+.top-bar-nav .menu-item .nav-top-link {
+    font-size: 20px;
+}
+.top-bar-nav .menu-item#menu-item-84 a.nav-top-link {
+    color: #1f1d1d;
+    background-color:  #fafafa;
+    border: 1px solid #1f1d1d;
+    border-radius: 0;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.top-bar-nav .menu-item#menu-item-84 a.nav-top-link:hover {
+    color: #fafafa;
+    background-color: #1f1d1d;
+    border: 1px solid #fafafa;
+    border-radius: 0;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.product .is-divider {
+    height: 0;
+}
