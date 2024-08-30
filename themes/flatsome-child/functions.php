@@ -488,34 +488,8 @@ function mzrd_calculate_price() {
     $carat_weight = isset($_POST['carat_weight']) ? (float)$_POST['carat_weight'] : 0.0;
     $ring_size = isset($_POST['ring_size']) ? (float)$_POST['ring_size'] : 0.0;
 
-    // Obtaining product categories
-    $product_categories = get_the_terms($product_id, 'product_cat');
-    if (is_wp_error($product_categories) || empty($product_categories)) {
-        wp_send_json_error(['error' => 'No categories found or an error occurred.']);
-        return;
-    }
-
-    // Assume that the product has only one category
-    $category_name = $product_categories[0]->name;
-
-    // Get all ACF field groups
-    $acf_groups = acf_get_field_groups();
-    $acf_group = null;
-
-    // Find a group of fields whose name coincides with the name of the product category
-    foreach ($acf_groups as $group) {
-        if (strtolower($group['title']) === strtolower($category_name)) {
-            $acf_group = $group;
-            break;
-        }
-    }
-
-    if (!$acf_group) {
-        wp_send_json_error(['error' => 'ACF group not found for the product category.']);
-        return;
-    }
-
-    $base_price = get_field('base_price', $product_id);error_log('base_price: '.$base_price);
+    // Obtaining the base price using ACF
+    $base_price = get_field('base_price', $product_id);
     if (!$base_price) {
         wp_send_json_error(['error' => 'Base price is missing.']);
         return;
@@ -523,16 +497,19 @@ function mzrd_calculate_price() {
 
     $final_price = $base_price;
 
+    // Calculation depending on the metal
     if ($precious_metal === 'platinum') {
         $precious_metal_percent = (float)get_field('platinum_increase', $product_id);
         $final_price += ($final_price * $precious_metal_percent / 100);
     }
 
+    // Calculation based on carat weight
     if ($carat_weight) {
         $price_per_carat = (float)get_field('price_per_carat', $product_id);
         $final_price += ($price_per_carat * $carat_weight);
     }
 
+    // Calculation depending on the size of the ring
     if (isset($ring_size) && $ring_size >= 8) {
         $ring_size_percent = (float)get_field('ring_size_increase', $product_id);
         $final_price += ($base_price * $ring_size_percent / 100);

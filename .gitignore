@@ -1,0 +1,30 @@
+# Ignoring sensitive and unnecessary files
+/wp-content/.git-credentials
+/wp-content/debug.log
+/wp-content/.idea/
+/wp-content/uploads/
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/backup-*/
+
+# Ignore PHPStorm project files
+.idea/
+
+# Ignore WordPress core files
+wp-admin/
+wp-includes/
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# Ignore everything in the wp-content except mu-plugins, plugins, themes
+wp-content/*
+!wp-content/mu-plugins/
+!wp-content/plugins/
+!wp-content/themes/
