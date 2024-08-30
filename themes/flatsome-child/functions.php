@@ -577,7 +577,6 @@ function mzrd_add_custom_title_after_breadcrumbs() {
             ?>
             <div id="brxe-sgwtpk" class="brxe-container" style="text-align: center;">
                 <div id="mydiv">
-                    <!--<pre class="wp-block-code"><code class="hljs json">[wpseo_breadcrumb]</code></pre>-->
                     <div id="brxe-sgwtpk" class="brxe-container">
                         <div id="brxe-krisox" class="brxe-divider heading__line--left horizontal">
                             <div class="line"></div>

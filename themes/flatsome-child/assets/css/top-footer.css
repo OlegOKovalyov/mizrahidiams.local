@@ -1,11 +1,11 @@
 /* Top Footer in Footer */
 .footer-wrapper .footer-1 .row {
     display: grid;
-    grid-template-columns: 35% 21% 25% 21%;
+    grid-template-columns: 35% 20% 25% 20%;
     max-width: none;
 }
 .footer-wrapper .footer-1 .row .col {
-    max-width: none;
+    max-width: 100%;
 }
 .footer-1 .brxe-block .brxe-text-link {
     display: block;
@@ -33,4 +33,17 @@
 }
 .footer-1 .is-divider {
     height: 0;
+}
+
+/* For tablets (maximum width 900px) */
+@media (max-width: 900px) {
+    .footer-wrapper .footer-1 .row {
+        grid-template-columns: 50% 50%;
+    }
+}
+/* For phones (maximum width 768px) */
+@media (max-width: 768px) {
+    .footer-wrapper .footer-1 .row {
+        grid-template-columns: 100%;
+    }
 }
