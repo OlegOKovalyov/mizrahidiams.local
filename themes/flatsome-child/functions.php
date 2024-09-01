@@ -568,12 +568,12 @@ function mzrd_display_carat_range() {
 /**
  * Add a Engagement Rings header to the Categories page
  */
-function mzrd_add_custom_title_after_breadcrumbs() {
+function mzrd_custom_category_layout() {
     if (is_product_category()) {
-        // Get the current WooCommerce product category object
         $current_category = get_queried_object();
 
         if ($current_category && !is_wp_error($current_category)) {
+            // Display the title of the category before the content
             ?>
             <div id="brxe-sgwtpk" class="brxe-container" style="text-align: center;">
                 <div id="mydiv">
@@ -581,7 +581,7 @@ function mzrd_add_custom_title_after_breadcrumbs() {
                         <div id="brxe-krisox" class="brxe-divider heading__line--left horizontal">
                             <div class="line"></div>
                         </div>
-                        <h2 id="brxe-cqiaxm" class="brxe-heading"><?php echo esc_html($current_category->name) ?></h2>
+                        <h2 id="brxe-cqiaxm" class="brxe-heading"><?php echo esc_html($current_category->name); ?></h2>
                         <div id="brxe-emmydi" class="brxe-divider heading__line--right horizontal">
                             <div class="line"></div>
                         </div>
@@ -589,114 +589,58 @@ function mzrd_add_custom_title_after_breadcrumbs() {
                 </div>
             </div>
             <?php
-            $category = get_queried_object();
-            // Get the category image ID and URL
+
+            // Get the ID of the image and the URL of the category
             $category_image_id = get_term_meta($current_category->term_id, 'thumbnail_id', true);
             $category_image_url = wp_get_attachment_url($category_image_id);
             $category_name = $current_category->name;
-            // Отримуємо перший товар з цієї категорії
+
+            // Receive all products of the category
             $args = array(
                 'post_type' => 'product',
-                'posts_per_page' => 1,
+                'posts_per_page' => 7, // Всі 7 товарів
                 'tax_query' => array(
                     array(
                         'taxonomy' => 'product_cat',
-                        'field'    => 'id',
-                        'terms'    => $current_category->term_id,
+                        'field' => 'id',
+                        'terms' => $current_category->term_id,
                     ),
                 ),
             );
             $query = new WP_Query($args);
+
             if ($query->have_posts()) :
-                while ($query->have_posts()) : $query->the_post();
-                    $product = wc_get_product(get_the_ID());
-                    $product_image_url = wp_get_attachment_url($product->get_image_id());
-                    $product_name = $product->get_name();
-                    $product_price = $product->get_price_html();
-                    ?>
-                    <div class="grid-container">
-                        <!-- Перші 2/3 ряду - зображення категорії з назвою -->
-                        <div class="grid-item category-image">
-                            <img src="<?php echo esc_url($category_image_url); ?>" alt="<?php echo esc_attr($category_name); ?>">
-                            <div class="category-name"><?php echo esc_html($category_name); ?></div>
-                        </div>
-
-                        <!-- Остання 1/3 ряду - картка товару -->
-                        <div class="grid-item product">
-                            <img src="<?php echo esc_url($product_image_url); ?>" alt="<?php echo esc_attr($product_name); ?>">
-                            <div class="product-info">
-                                <h2><?php echo esc_html($product_name); ?></h2>
-                                <p><?php echo wp_kses_post($product_price); ?></p>
-                                <button>Shop Now</button>
-                            </div>
-                        </div>
+                // Open the grid container
+                echo '<div class="custom-category-grid">';
+                // Take out the first product
+                $query->the_post();
+                ?>
+                <div class="grid-item category-image">
+                    <div class="category-image__img">
+                        <img src="<?php echo esc_url($category_image_url); ?>" alt="<?php echo esc_attr($category_name); ?>">
                     </div>
+                    <div class="category-name term__injection-title"><?php echo esc_html($category_name); ?></div>
+                </div>
+                <div class="grid-item product">
+                    <img src="<?php echo esc_url(wp_get_attachment_url(get_post_thumbnail_id())); ?>" alt="<?php the_title(); ?>">
+                    <div class="product-info">
+                        <h2><?php the_title(); ?></h2>
+                        <p><?php _e('Starting From:', 'flatsome-child'); echo ' ' . wc_price(get_post_meta(get_the_ID(), '_price', true)); ?></p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
                 <?php
+
+                // Take out the rest of the products
+                while ($query->have_posts()) : $query->the_post();
+                    wc_get_template_part('content', 'product');
                 endwhile;
+                echo '</div>'; // Close the grid container
             endif;
+
             wp_reset_postdata();
-
-            // Display category image and name on the first 2/3 width
-            echo '<div class="firs-row"><div class="custom-category-layout">';
-            echo '<div class="category-image-name" style="width: 66%; float: left; text-align: center;">';
-            if ($image_url) {
-                echo '<img src="' . esc_url($image_url) . '" alt="' . esc_attr($category->name) . '" style="width: 100%; height: auto; margin-bottom: 10px;">';
-            }
-            echo '<h1 class="category-title" style="margin-top: 0;">' . esc_html($category->name) . '</h1>';
-            echo '</div>';
-            // Display the first product on the last 1/3 width
-            echo '<div class="first-product" style="width: 33%; float: left;">';
-            // Custom query to get the first product of the category
-            $args = array(
-                'post_type' => 'product',
-                'posts_per_page' => 1,
-                'tax_query' => array(
-                    array(
-                        'taxonomy' => 'product_cat',
-                        'field' => 'id',
-                        'terms' => $category->term_id,
-                    ),
-                ),
-            );
-            $first_product = new WP_Query($args);
-
-            if ($first_product->have_posts()) :
-                while ($first_product->have_posts()) : $first_product->the_post();
-                    wc_get_template_part('content', 'product'); // Use WooCommerce template to display the product
-                endwhile;
-            endif;
-            wp_reset_postdata(); // Reset post data
-            echo '</div>';
-            echo '</div></div>';
-            // Display the rest of the products starting from a new row
-            echo '<div class="custom-product-grid" style="clear: both; margin-top: 20px;">';
-
-            // Custom query to get the rest of the products of the category
-            $args = array(
-                'post_type' => 'product',
-                'posts_per_page' => 6, // 7 total minus 1 already displayed
-                'offset' => 1, // Skip the first product
-                'tax_query' => array(
-                    array(
-                        'taxonomy' => 'product_cat',
-                        'field' => 'id',
-                        'terms' => $category->term_id,
-                    ),
-                ),
-            );
-            $products = new WP_Query($args);
-
-            if ($products->have_posts()) :
-                echo '<div class="products columns-3">';
-                while ($products->have_posts()) : $products->the_post();
-                    wc_get_template_part('content', 'product'); // Use WooCommerce template to display the product
-                endwhile;
-                echo '</div>';
-            endif;
-            wp_reset_postdata(); // Reset post data
         }
     }
 }
-
-add_action('woocommerce_before_main_content', 'mzrd_add_custom_title_after_breadcrumbs', 15);
+add_action('woocommerce_before_main_content', 'mzrd_custom_category_layout', 15);
 

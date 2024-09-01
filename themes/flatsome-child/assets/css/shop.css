@@ -2,12 +2,8 @@
 .archive .header-block.block-html-after-header {
     display: none !important;
 }
-.custom-page-title,
-.category-page-title {
-    padding-top: 70px;
-}
-.custom-page-title #brxe-krisox {
-    /*display: none;*/
+.archive .category-page-title {
+    padding-top: clamp(0px, calc((70 / (1500 - 320)) * (100vw - 320px)), 70px);
 }
 .archive .custom-page-title .wp-block-code .hljs,
 .archive .custom-page-title .wp-block-code {
@@ -33,9 +29,8 @@
     font-size: 1.2rem;
     font-weight: 300;
 }
-/*.archive .custom-page-title h2 {*/
 .archive #mydiv h2 {
-    font-size: 2.5rem;
+    font-size: clamp(1.2rem, 2.5vw, 2.5rem);
     font-weight: 400;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -66,6 +61,7 @@
     align-items: center;
     justify-content: center;
     column-gap: 40px;
+    padding-bottom: 20px;
 }
 /* Left and right container */
 .brxe-divider {
@@ -84,7 +80,7 @@
 }
 /* Heading style */
 .brxe-heading {
-    margin: 0 20px; /* Adds a space to the left and right of the title */
+    margin: 0 15px; /* Adds a space to the left and right of the title */
 }
 /* Left line: gradient from right to left */
 .heading__line--left .line {
@@ -96,4 +92,88 @@
 }
 
 /* Categories Page */
-.archive
+.tax-product_cat .product-small.box {
+    display: none;
+}
+.tax-product_cat .row.category-page-row .col {
+    padding-bottom: 50px;
+}
+.tax-product_cat .category-page-title,
+.tax-product_cat .page-title-bg.fill,
+.tax-product_cat #main {
+    background-color: #f0f0f0;
+}
+/* First row */
+/* The main container grid */
+.tax-product_cat .custom-category-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    margin: 0 auto;
+    align-items: stretch; /* Alignment of elements by height */
+}
+/* Common style for all grid elements */
+.tax-product_cat .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    box-sizing: border-box; /* Include padding in the calculation of the total height */
+}
+/* The main container for the category image block */
+.tax-product_cat .grid-item.category-image {
+    padding-top: clamp(2.4rem, calc(0.6vw + 2.208rem), 3rem);
+    padding-bottom: clamp(2.4rem, calc(0.6vw + 2.208rem), 3rem);
+}
+/* Styles for the category image */
+.tax-product_cat .grid-item.category-image .category-image__img img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin-bottom: 25px;
+    object-fit: cover; /* Ensure the correct display of the image, if it is larger or smaller than the required size */
+}
+/* Styles for category name */
+.tax-product_cat .grid-item.category-image .category-name {
+    font-size: 1.3rem;
+    color: #1f1d1d;
+    text-transform: uppercase;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.07em;
+}
+/* Styles for the product block */
+.tax-product_cat .grid-item.product img {
+    max-width: 265px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.tax-product_cat .term__injection-title {
+    padding-bottom: 1rem;
+    position: relative;
+    border-bottom: 3px solid #1f1d1d;
+}
+.tax-product_cat .grid-item.product {
+    background-color: #fff;
+}
+
+
+
+@media (max-width: 900px) {
+    .tax-product_cat .custom-category-grid {
+        grid-template-columns: 1fr 1fr; /* Two columns on tablets */
+    }
+}
+
+.tax-product_cat .medium-flex-wrap {
+    -ms-flex-flow: nowrap !important;
+     flex-flow: nowrap !important;
+}
+
+@media (max-width: 768px) {
+    .tax-product_cat .custom-category-grid {
+        grid-template-columns: 1fr; /* One column on mobile devices */
+    }
+}
