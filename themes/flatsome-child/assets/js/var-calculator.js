@@ -34,27 +34,20 @@ jQuery(document).ready(function($) {
         };
 
         // Check if each variation attribute element is present before adding it to formData
-        if ($('select#pa_precious-metal').length > 0) {
-            formData.precious_metal = $('select#pa_precious-metal').val();
+        const $preciousMetal = $('select#pa_precious-metal');
+        const $caratsWeight = $('select#pa_carats-weight');
+        const $ringSize = $('select#pa_ring-size');
+        if ($preciousMetal.length > 0) {
+            formData.precious_metal = $preciousMetal.val();
         }
 
-        if ($('select#pa_carats-weight').length > 0) {
-            formData.carat_weight = $('select#pa_carats-weight').val();
+        if ($caratsWeight.length > 0) {
+            formData.carat_weight = $caratsWeight.val();
         }
 
-        if ($('select#pa_ring-size').length > 0) {
-            formData.ring_size = $('select#pa_ring-size').val();
+        if ($ringSize.length > 0) {
+            formData.ring_size = $ringSize.val();
         }
-
-        /*let formData = {
-            action: 'calculate_price',
-            product_id: $('input[name="product_id"]').val(),
-            precious_metal: $('select#pa_precious-metal').val(),
-            carat_weight: $('select#pa_carats-weight').val(),
-            ring_size: $('select#pa_ring-size').val()
-        };*/
-
-        console.log(formData); // Debugging - verification of transmitted data
 
         $.ajax({
             type: 'POST',
@@ -62,27 +55,36 @@ jQuery(document).ready(function($) {
             data: formData,
             success: function(response) {
                 if(response.success) {
-                    console.log('AJAX Response:', response); // Налагодження відповіді сервера
-                    console.log(response);
+                    console.log('AJAX Response:', response);
                     let finalPrice = parseFloat(response.data.final_price);
                     if (!isNaN(finalPrice)) {
-                        $('#calculated-price').html('$' + finalPrice.toFixed(2));
+                        // Format the price without .00 and add spaces for thousands
+                        let formattedPrice = formatPrice(finalPrice);
+                        $('#calculated-price').html('$' + formattedPrice);
                 } else {
                     $('#calculated-price').html('Error calculating price');
                         console.error('Invalid final price:', response.data.final_price);
                 }
             } else {
                     $('#calculated-price').html('Error calculating price');
-                    // console.error(response.data.error);
                 }
             },
             error: function(xhr, status, error) {
-                console.error('AJAX Error:', xhr); // Налагодження помилок AJAX
-                console.error('AJAX Error:', error); // Налагодження помилок AJAX
+                console.error('AJAX Error:', error);
+                console.error('AJAX Error Status:', status);
+                console.error('AJAX Error Details:', xhr);
                 $('#calculated-price').html('Error calculating price');
-                console.error('AJAX Error:', error); // Debugging - AJAX error output
             }
         });
+    }
+
+    function formatPrice(price) {
+        // Remove the decimals if .00
+        let formattedPrice = price.toFixed(2);
+        formattedPrice = formattedPrice.replace(/\.00$/, '');
+        // Add space for thousands
+        formattedPrice = formattedPrice.replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+        return formattedPrice;
     }
 
     $('form.variations_form').on('change', 'select', function() {

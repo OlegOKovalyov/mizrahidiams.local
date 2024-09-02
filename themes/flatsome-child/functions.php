@@ -622,11 +622,26 @@ function mzrd_custom_category_layout() {
                     <div class="category-name term__injection-title"><?php echo esc_html($category_name); ?></div>
                 </div>
                 <div class="grid-item product">
-                    <img src="<?php echo esc_url(wp_get_attachment_url(get_post_thumbnail_id())); ?>" alt="<?php the_title(); ?>">
+                    <a href="<?php echo esc_url(get_permalink()); ?>">
+                        <img src="<?php echo esc_url(wp_get_attachment_url(get_post_thumbnail_id())); ?>" alt="<?php the_title(); ?>">
+                    </a>
                     <div class="product-info">
-                        <h2><?php the_title(); ?></h2>
-                        <p><?php _e('Starting From:', 'flatsome-child'); echo ' ' . wc_price(get_post_meta(get_the_ID(), '_price', true)); ?></p>
-                        <button>Shop Now</button>
+                        <a href="<?php echo esc_url(get_permalink()); ?>">
+                            <h2><?php the_title(); ?></h2>
+                        </a>
+                        <p class="starting-from"><?php
+                            if ('Affordable Elegance' !== $category_name) _e('Starting From ', 'flatsome-child');
+                            echo ' ' . wc_price(get_post_meta(get_the_ID(), '_price', true)); ?></p>
+<!--                        <button>Shop Now</button>-->
+                        <a class="shop__btn bricks-button" href="<?php echo esc_url(get_permalink()); ?>">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="#1F1D1D" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M3 6H21" stroke="#1F1D1D" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10" stroke="#1F1D1D" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            SHOP NOW
+                        </a>
+
                     </div>
                 </div>
                 <?php

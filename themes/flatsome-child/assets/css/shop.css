@@ -2,9 +2,6 @@
 .archive .header-block.block-html-after-header {
     display: none !important;
 }
-.archive .category-page-title {
-    padding-top: clamp(0px, calc((70 / (1500 - 320)) * (100vw - 320px)), 70px);
-}
 .archive .custom-page-title .wp-block-code .hljs,
 .archive .custom-page-title .wp-block-code {
     background-color: #fff;
@@ -25,7 +22,7 @@
 .page-title-inner .breadcrumbs.yoast-breadcrumb a,
 .page-title-inner .breadcrumbs.yoast-breadcrumb .breadcrumb_last {
     color: #1f1d1d;
-    font-family: Jost;
+    font-family: Jost, sans-serif;
     font-size: 1.2rem;
     font-weight: 300;
 }
@@ -34,10 +31,10 @@
     font-weight: 400;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    font-family: "Cormorant Garamond";
+    font-family: "Cormorant Garamond", serif;
 }
-.archive .shop-page-title {
-    text-shadow: none;
+.post-type-archive .shop-page-title {
+    display: none;
 }
 .woocommerce-shop .shop-page-title nav#breadcrumbs {
     display: none;
@@ -95,6 +92,9 @@
 .tax-product_cat .product-small.box {
     display: none;
 }
+.tax-product_cat .category-page-title {
+    padding-top: clamp(0px, calc((70 / (1500 - 320)) * (100vw - 320px)), 70px);
+}
 .tax-product_cat .row.category-page-row .col {
     padding-bottom: 50px;
 }
@@ -146,9 +146,25 @@
 }
 /* Styles for the product block */
 .tax-product_cat .grid-item.product img {
-    max-width: 265px;
+    max-width: 250px;
     height: auto;
-    margin-bottom: 20px;
+    margin: 20px 20px 0 20px;
+}
+.grid-item.product .product-info h2 {
+    color: #000;
+    font-size: clamp(1.333rem, calc(0.456vw + 1.242rem), 1.618rem);
+    font-weight: 400;
+    padding: 0 20px;
+}
+.tax-product_cat .starting-from {
+    margin-bottom: 0.5em;
+}
+.tax-product_cat .starting-from,
+.tax-product_cat .starting-from .amount {
+    color: #000;
+    font-size: clamp(1.125rem, calc(0.4vw + 1.045rem), 1.375rem);
+    font-weight: 300;
+    line-height: calc(1.4);
 }
 .tax-product_cat .term__injection-title {
     padding-bottom: 1rem;
@@ -159,7 +175,39 @@
     background-color: #fff;
 }
 
+/* Show Now Button */
+.shop__btn {
+    padding: 0.5em 1em;
+    max-width: 230px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #1F1D1D;
+    text-transform: uppercase;
+    font-weight: 400;
+    gap: 10px;
+    transition: all 0.5s ease;
+    color: #1F1D1D;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-decoration: none;
+}
 
+.shop__btn svg {
+    stroke: #1F1D1D; /* Темний колір іконки */
+    transition: all 0.5s ease;
+}
+
+.grid-item.product:hover .shop__btn {
+    background-color: #1F1D1D;
+    color: #fafafa;
+}
+
+.grid-item.product:hover .shop__btn svg {
+    fill: #fafafa;
+}
 
 @media (max-width: 900px) {
     .tax-product_cat .custom-category-grid {
@@ -168,7 +216,6 @@
 }
 
 .tax-product_cat .medium-flex-wrap {
-    -ms-flex-flow: nowrap !important;
      flex-flow: nowrap !important;
 }
 
