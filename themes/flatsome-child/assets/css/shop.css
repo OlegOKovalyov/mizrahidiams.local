@@ -77,14 +77,12 @@
 }
 /* Heading style */
 .brxe-heading {
-    margin: 0 15px; /* Adds a space to the left and right of the title */
+    margin: 0 15px; /* Add a space to the left and right of the title */
 }
-/* Left line: gradient from right to left */
 .heading__line--left .line {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000 100%);
 }
-/* Right line: gradient from left to right */
-.heading__line--right .line {
+.heading__line--right .line { /* Right line: gradient from left to right */
     background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000 100%);
 }
 
@@ -177,6 +175,7 @@
 
 /* Show Now Button */
 .shop__btn {
+    margin-bottom: 20px;
     padding: 0.5em 1em;
     max-width: 230px;
     width: 100%;

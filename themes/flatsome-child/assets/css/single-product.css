@@ -12,6 +12,23 @@
 .single-product .breadcrumbs {
     margin-bottom: 20px;
 }
+/* Zoom Button */
+.single-product .image-tools.bottom {
+    bottom: 90%;
+}
+.single-product .image-tools.left {
+    left: 90%;
+}
+.single-product .image-tools a.zoom-button {
+    border: none;
+    opacity: 0;
+}
+.single-product .zoom-button:hover {
+    color: #1f1d1d;
+    background-color: transparent;
+    border-color: transparent;
+    opacity: 1;
+}
 .single-product .price-wrapper .product-page-price {
     color: #1f1d1d;
     font-weight: 300;
@@ -170,8 +187,5 @@
     margin: 0;
 }
 .single-product .nav-dropdown.nav-dropdown-default>li>a {
-    /*padding-left: 0;*/
-    /*padding-right: 0;*/
-    /*margin: 0 10px;*/
     border-bottom: none;
 }

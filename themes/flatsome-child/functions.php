@@ -96,7 +96,7 @@ function mzrd_register_custom_metaboxes() {
             $metabox['title'],
             $metabox['callback'],
             'product',
-            'normal', // Position (you can use 'side' to place it on the right)
+            'normal',
             'high'
         );
     }
@@ -146,7 +146,7 @@ function mzrd_shipping_returns_meta_box_callback($post) {
     ));
 }
 
-// Saving Product Details metafield data
+/*// Saving Product Details metafield data
 function mzrd_save_product_details_data($post_id) {
     // Nonce validation
     if (!isset($_POST['mzrd_product_details_meta_box_nonce']) || !wp_verify_nonce($_POST['mzrd_product_details_meta_box_nonce'], 'mzrd_save_product_details_data')) {
@@ -219,7 +219,57 @@ function mzrd_save_shipping_returns_data($post_id) {
         update_post_meta($post_id, '_mzrd_shipping_returns', wp_kses_post($_POST['mzrd_shipping_returns']));
     }
 }
+add_action('save_post', 'mzrd_save_shipping_returns_data');*/
+
+/**
+ * General function to save product meta data
+ * @param $post_id
+ * @param $meta_key
+ * @param $nonce_action
+ */
+function mzrd_save_product_meta_data($post_id, $meta_key, $nonce_action) {
+    // Nonce validation
+    if (!isset($_POST[$nonce_action . '_meta_box_nonce']) || !wp_verify_nonce($_POST[$nonce_action . '_meta_box_nonce'], $nonce_action)) {
+        return;
+    }
+
+    // Checking the right to edit
+    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
+        return;
+    }
+
+    if (isset($_POST['post_type']) && $_POST['post_type'] === 'product') {
+        if (!current_user_can('edit_post', $post_id)) {
+            return;
+        }
+    }
+
+    // Data storage
+    if (isset($_POST[$meta_key])) {
+        if ($meta_key === 'mzrd_shipping_returns') {
+            update_post_meta($post_id, '_' . $meta_key, wp_kses_post($_POST[$meta_key]));
+        } else {
+            update_post_meta($post_id, '_' . $meta_key, sanitize_textarea_field($_POST[$meta_key]));
+        }
+    }
+}
+
+// Hook to save meta data for different fields
+function mzrd_save_product_details_data($post_id) {
+    mzrd_save_product_meta_data($post_id, 'mzrd_product_details', 'mzrd_save_product_details_data');
+}
+add_action('save_post', 'mzrd_save_product_details_data');
+
+function mzrd_save_our_diamonds_data($post_id) {
+    mzrd_save_product_meta_data($post_id, 'mzrd_our_diamonds', 'mzrd_save_our_diamonds_data');
+}
+add_action('save_post', 'mzrd_save_our_diamonds_data');
+
+function mzrd_save_shipping_returns_data($post_id) {
+    mzrd_save_product_meta_data($post_id, 'mzrd_shipping_returns', 'mzrd_save_shipping_returns_data');
+}
 add_action('save_post', 'mzrd_save_shipping_returns_data');
+
 
 /**
  * Add custom tabs to Single Product
@@ -256,10 +306,8 @@ function mzrd_custom_product_tabs($tabs) {
 function mzrd_product_details_tab_callback() {
     global $post;
 
-    // Отримання даних мета поля
     $product_details = get_post_meta($post->ID, '_mzrd_product_details', true);
 
-    // Виведення контенту
     if ($product_details) {
         echo '<p>' . nl2br(esc_html($product_details)) . '</p>';
     } else {
@@ -632,7 +680,6 @@ function mzrd_custom_category_layout() {
                         <p class="starting-from"><?php
                             if ('Affordable Elegance' !== $category_name) _e('Starting From ', 'flatsome-child');
                             echo ' ' . wc_price(get_post_meta(get_the_ID(), '_price', true)); ?></p>
-<!--                        <button>Shop Now</button>-->
                         <a class="shop__btn bricks-button" href="<?php echo esc_url(get_permalink()); ?>">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z" stroke="#1F1D1D" stroke-linecap="round" stroke-linejoin="round"></path>
