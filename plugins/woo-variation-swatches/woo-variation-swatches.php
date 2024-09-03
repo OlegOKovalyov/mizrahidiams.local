@@ -4,14 +4,14 @@
 	 * Plugin URI: https://wordpress.org/plugins/woo-variation-swatches/
 	 * Description: Beautiful colors, images and buttons variation swatches for woocommerce product attributes. Requires WooCommerce 7.5+
 	 * Author: Emran Ahmed
-	 * Version: 2.1.1
-	 * Domain Path: /languages
+	 * Version: 2.1.2
 	 * Requires PHP: 7.4
 	 * Requires at least: 5.9
-	 * Tested up to: 6.5
+	 * Tested up to: 6.6
 	 * WC requires at least: 7.5
-	 * WC tested up to: 9.0
+	 * WC tested up to: 9.2
 	 * Text Domain: woo-variation-swatches
+	 * Domain Path: /languages
 	 * Author URI: https://getwooplugins.com/
 	 * Requires Plugins: woocommerce
 	 */
@@ -21,7 +21,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( ! defined( 'WOO_VARIATION_SWATCHES_PLUGIN_VERSION' ) ) {
-	define( 'WOO_VARIATION_SWATCHES_PLUGIN_VERSION', '2.1.1' );
+	define( 'WOO_VARIATION_SWATCHES_PLUGIN_VERSION', '2.1.2' );
 }
 
 if ( ! defined( 'WOO_VARIATION_SWATCHES_MINIMUM_COMPATIBLE_PRO_PLUGIN_VERSION' ) ) {
@@ -153,7 +153,7 @@ function woo_variation_swatches_deactivate_notice_pro() {
 function woo_variation_swatches_row_meta_notice_pro( string $plugin_file, array $plugin_data) {
 	if ( plugin_basename( WOO_VARIATION_SWATCHES_MAYBE_PRO_PLUGIN_FILE ) === $plugin_file ) {
 		$current_version = $plugin_data['Version'];
-		if (  version_compare( $current_version, constant( 'WOO_VARIATION_SWATCHES_MINIMUM_COMPATIBLE_PRO_PLUGIN_VERSION' ), '<=' )  ) {
+		if (  version_compare( $current_version, constant( 'WOO_VARIATION_SWATCHES_MINIMUM_COMPATIBLE_PRO_PLUGIN_VERSION' ), '<' )  ) {
 			/* translators: %s: Pro Plugin Version */
 			$notice_text = 	 sprintf(esc_html__('You are running older version of "Variation Swatches for WooCommerce - Pro". Please upgrade to %s or upper.', 'woo-variation-swatches'), esc_html(constant( 'WOO_VARIATION_SWATCHES_MINIMUM_COMPATIBLE_PRO_PLUGIN_VERSION' )));
 

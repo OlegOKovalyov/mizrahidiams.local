@@ -1,4 +1,42 @@
 /* Top Bar Menu in Header */
+/* Search Input */
+.header-top li.current-dropdown>.nav-dropdown {
+    border: 4px solid #fff;
+    font-size: clamp(1rem, calc(0.2vw + 0.96rem), 1.125rem);
+    font-weight: 300;
+    background-color: rgba(0, 0, 0, 0);
+    left: 6px;
+    top: 30px;
+    min-width: 800px;
+    padding: 0;
+}
+.searchform .search-field::placeholder {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 1;
+}
+.searchform .search-field {
+    background-color: #1f1d1d;
+    border: none;
+    color: #fff;
+    font-size: 1.3rem;
+    height: 1.3rem;
+    vertical-align: bottom;
+}
+.searchform .search-field:focus {
+    box-shadow: none;
+    opacity: 1 !important;
+    outline: 0;
+    color: #fff;
+    background-color: #1f1d1d;
+}
+.nav-dropdown-has-border .nav-dropdown {
+    border: 2px solid #fff;
+}
+.search-form .ux-search-submit.button.icon {
+    display: none;
+}
 .header .logo-left #logo {
     display: none;
 }
@@ -42,4 +80,10 @@
 }
 .product .is-divider {
     height: 0;
+}
+
+@media (max-width: 850px) {
+    .searchform .search-field {
+        padding: 20px;
+    }
 }

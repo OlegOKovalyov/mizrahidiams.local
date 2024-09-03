@@ -146,7 +146,7 @@ function mzrd_shipping_returns_meta_box_callback($post) {
     ));
 }
 
-/*// Saving Product Details metafield data
+// Saving Product Details metafield data
 function mzrd_save_product_details_data($post_id) {
     // Nonce validation
     if (!isset($_POST['mzrd_product_details_meta_box_nonce']) || !wp_verify_nonce($_POST['mzrd_product_details_meta_box_nonce'], 'mzrd_save_product_details_data')) {
@@ -219,57 +219,7 @@ function mzrd_save_shipping_returns_data($post_id) {
         update_post_meta($post_id, '_mzrd_shipping_returns', wp_kses_post($_POST['mzrd_shipping_returns']));
     }
 }
-add_action('save_post', 'mzrd_save_shipping_returns_data');*/
-
-/**
- * General function to save product meta data
- * @param $post_id
- * @param $meta_key
- * @param $nonce_action
- */
-function mzrd_save_product_meta_data($post_id, $meta_key, $nonce_action) {
-    // Nonce validation
-    if (!isset($_POST[$nonce_action . '_meta_box_nonce']) || !wp_verify_nonce($_POST[$nonce_action . '_meta_box_nonce'], $nonce_action)) {
-        return;
-    }
-
-    // Checking the right to edit
-    if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE) {
-        return;
-    }
-
-    if (isset($_POST['post_type']) && $_POST['post_type'] === 'product') {
-        if (!current_user_can('edit_post', $post_id)) {
-            return;
-        }
-    }
-
-    // Data storage
-    if (isset($_POST[$meta_key])) {
-        if ($meta_key === 'mzrd_shipping_returns') {
-            update_post_meta($post_id, '_' . $meta_key, wp_kses_post($_POST[$meta_key]));
-        } else {
-            update_post_meta($post_id, '_' . $meta_key, sanitize_textarea_field($_POST[$meta_key]));
-        }
-    }
-}
-
-// Hook to save meta data for different fields
-function mzrd_save_product_details_data($post_id) {
-    mzrd_save_product_meta_data($post_id, 'mzrd_product_details', 'mzrd_save_product_details_data');
-}
-add_action('save_post', 'mzrd_save_product_details_data');
-
-function mzrd_save_our_diamonds_data($post_id) {
-    mzrd_save_product_meta_data($post_id, 'mzrd_our_diamonds', 'mzrd_save_our_diamonds_data');
-}
-add_action('save_post', 'mzrd_save_our_diamonds_data');
-
-function mzrd_save_shipping_returns_data($post_id) {
-    mzrd_save_product_meta_data($post_id, 'mzrd_shipping_returns', 'mzrd_save_shipping_returns_data');
-}
 add_action('save_post', 'mzrd_save_shipping_returns_data');
-
 
 /**
  * Add custom tabs to Single Product

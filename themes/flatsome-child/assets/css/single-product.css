@@ -21,7 +21,6 @@
 }
 .single-product .image-tools a.zoom-button {
     border: none;
-    opacity: 0;
 }
 .single-product .zoom-button:hover {
     color: #1f1d1d;
